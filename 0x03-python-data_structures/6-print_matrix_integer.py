@@ -4,6 +4,6 @@ def print_matrix_integer(matrix=[[]]):
     for sub_array in matrix:
         for i in sub_array:
             str = " " if (i != len(sub_array) * x) else ""
-            print(i, end=str)
+            print("{:d}".format(i), end=str)
         x += 1
         print()
