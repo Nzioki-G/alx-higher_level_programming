@@ -1,4 +1,4 @@
-#ifndef PYBYTES_N
+#ifndef PYBYTES_H
 #define PYBYTES_H
 
 void print_python_list(PyObject *p);
