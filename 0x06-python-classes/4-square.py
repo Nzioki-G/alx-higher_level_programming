@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""A blueprint of a square"""
+
+
 class Square:
     """
     class that defines a square, initializes it
@@ -7,6 +10,12 @@ class Square:
     __size = 0
 
     def __init__(self, size=0):
+        """instantiates a new Square
+            Args:
+                @size(int): size of square
+            Returns:
+                nothing
+        """
         self.__size = size
 
         if type(size) is not int:
