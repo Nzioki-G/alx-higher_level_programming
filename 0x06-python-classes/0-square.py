@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""A blueprint of a square"""
+
+
 class Square:
     """
-    A class that defines a square
+    A minimal square class
     """
     pass
