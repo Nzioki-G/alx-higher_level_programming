@@ -48,26 +48,28 @@ class Square:
     def my_print(self):
         """prints a square with #'s and spaces for position"""
 
-        if self.__position[1] > 0:
-            print()
-
-        for i in range(self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
-
         if self.__size == 0:
             print()
+        else:
+            for i in range(self.__position[1]):
+                print()
+            for i in range(self.__size):
+                print((" " * self.__position[0]) + ("#" * self.__size))
 
     def __str__(self):
         """prints similar to my_print()"""
         sq = []
-        if self.__position[1] > 0:
-            sq.append(str("\n"))
-
-        for i in range(self.__size):
-            sq.append(str(" ") * self.__position[0])
-            sq.append(str("#") * self.__size)
-            if i < self.__size - 1:
-                sq.append("\n")
         if self.__size == 0:
-            sq.append("\n")
+            sq.append("")
+
+        else:
+            for i in range(self.__position[1]):
+                sq.append("\n")
+
+            for i in range(self.__size):
+                sq.append(str(" ") * self.__position[0])
+                sq.append(str("#") * self.__size)
+                if i < self.__size - 1:
+                    sq.append("\n")
+
         return "".join(sq)
