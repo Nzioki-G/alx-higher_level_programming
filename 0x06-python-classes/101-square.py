@@ -60,8 +60,14 @@ class Square:
     def __str__(self):
         """prints similar to my_print()"""
         sq = []
+        if self.__position[1] > 0:
+            sq.append(str("\n"))
+
         for i in range(self.__size):
             sq.append(str(" ") * self.__position[0])
             sq.append(str("#") * self.__size)
+            if i < self.__size - 1:
+                sq.append("\n")
+        if self.__size == 0:
             sq.append("\n")
         return "".join(sq)
