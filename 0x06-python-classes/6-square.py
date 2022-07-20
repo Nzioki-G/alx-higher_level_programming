@@ -57,7 +57,7 @@ class Square:
         """gets the attribute position
             Returns: the tuple position
         """
-        return this.__position
+        return self.__position
 
     @position.setter
     def position(self, value):
