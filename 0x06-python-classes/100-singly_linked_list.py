@@ -42,13 +42,15 @@ class Node:
 class SinglyLinkedList:
     """defines a singly linked list"""
     __head = None
+
     def __init__(self):
         self.__head = None
 
     def sorted_insert(self, value):
         """inserts a node into the list with value as Node's data
             Args:
-                @value(int): the data value of Node to insert"""
+                @value(int): the data value of Node to insert
+        """
         new_node = Node(value)
 
         if (self.__head is None):
@@ -70,7 +72,8 @@ class SinglyLinkedList:
     def __str__(self):
         """to string func
             Returns:
-                printable list"""
+                printable list
+        """
         my_list = []
         current = self.__head
 
