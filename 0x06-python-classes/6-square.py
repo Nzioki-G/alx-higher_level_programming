@@ -91,6 +91,8 @@ class Square:
             Returns: nothing
         """
 
+        if self.__size == 0:
+            return
         if self.__position[1] > 0:
             print()
 
