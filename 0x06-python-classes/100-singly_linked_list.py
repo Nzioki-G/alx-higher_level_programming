@@ -72,6 +72,9 @@ class SinglyLinkedList:
         return "\n".join(my_list)
 
 
+"""A Singly linked list object"""
+
+
 class SinglyLinkedList:
     """Represent a singly-linked list."""
 
