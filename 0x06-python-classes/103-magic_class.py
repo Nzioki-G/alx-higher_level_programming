@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""A circle in code"""
+
+
 class MagicClass:
+    """implements a circle, gets area and perimeter"""
     import math
 
     def __init__(self, radius=0):
