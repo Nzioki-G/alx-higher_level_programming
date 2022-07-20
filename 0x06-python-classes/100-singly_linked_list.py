@@ -4,6 +4,9 @@
 
 class Node:
     """defines a singly linked list Node with data & next pointer"""
+    __data = 0
+    __next_node = None
+
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -38,6 +41,7 @@ class Node:
 
 class SinglyLinkedList:
     """defines a singly linked list"""
+    __head = None
     def __init__(self):
         self.__head = None
 
