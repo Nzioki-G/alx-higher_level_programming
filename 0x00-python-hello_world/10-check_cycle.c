@@ -18,8 +18,12 @@ int check_cycle(listint_t *list)
 		return (0);
 	two = one->next;
 
-	while (one != two && two != NULL)
+	while (two != NULL)
 	{
+		/* if our nodes collide, we have a cycle */
+		if (one == two)
+			return (1);
+
 		/* take 1 step */
 		one = one->next;
 
@@ -27,10 +31,6 @@ int check_cycle(listint_t *list)
 		two = two->next;
 		if (two)
 			two = two->next;
-		
-		/* if our nodes collide, we have a cycle */
-		if (one == two)
-			return (1);
 	}
 
 	return (0);
