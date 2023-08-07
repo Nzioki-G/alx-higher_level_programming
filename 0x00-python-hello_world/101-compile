@@ -1,3 +1,10 @@
 #!/bin/bash
-imported=$(python3 -m compileall $PYFILE)
+imported=$(python3 -m compileall -b $PYFILE)
 echo $imported
+
+#	-m module-name
+#              Searches sys.path for the named module and runs the corre‐
+#              sponding  .py file as a script. This terminates the option
+#              list
+
+#	-b     Issue  warnings
