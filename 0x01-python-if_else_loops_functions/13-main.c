@@ -18,12 +18,12 @@ int main(void)
 	add_nodeint_end(&head, 98);
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
-	print_list(head);
+	print_listint(head);
 
 	printf("----------------------\n");
 
 	insert_node(&head, 109876789);
-	print_list(head);
+	print_listint(head);
 	free_listint(head);
 
 	return (0);
