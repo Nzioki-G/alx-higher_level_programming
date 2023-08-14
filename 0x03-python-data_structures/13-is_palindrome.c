@@ -23,21 +23,22 @@ int is_palindrome(listint_t **head)
 	}
 
 	current = *head;
-	array = malloc(sizeof(int) * len);
-	for (idx = 0; idx < len; idx++)
+	array = malloc(sizeof(int) * len / 2 + 1);
+	for (idx = 0; idx < len / 2; idx++)
 	{
 		array[idx] = current->n;
 		current = current->next;
 	}
 
-	idx = 0;
-	len -= 1;
-	while (idx < len)
+	if (len % 2 == 1)
+		current = current->next;
+	idx = len / 2 - 1;
+	while (idx >= 0)
 	{
-		if (array[idx] != array[len])
+		if (array[idx] != current->n)
 			return (0);
-		idx++;
-		len--;
+		idx--;
+		current = current->next;
 	}
 	return (1);
 }
