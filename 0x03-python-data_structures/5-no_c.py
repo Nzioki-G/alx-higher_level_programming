@@ -4,6 +4,12 @@ def no_c(my_string):
     for cha in my_string:
         if cha == 'c' or cha == 'C':
             continue
-        else:
-            new_str += cha
+        new_str += cha
     return new_str
+
+
+
+print(no_c("Best School"))
+print(no_c("Chicago"))
+print(no_c("C is fun!"))
+
