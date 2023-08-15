@@ -12,7 +12,7 @@ int is_palindrome(listint_t **head)
 	int len = 0, *array, idx;
 
 	/* empty list is palindrome */
-	if (!*head)
+	if (!*head || !(*head)->next)
 		return (1);
 
 	current = *head;
