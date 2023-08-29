@@ -58,6 +58,7 @@ class Square:
                 print()
 
 
+"""
 my_square_1 = Square(3)
 my_square_1.my_print()
 
@@ -72,4 +73,4 @@ my_square_3 = Square(3, (3, 0))
 my_square_3.my_print()
 
 print("--")
-
+"""
