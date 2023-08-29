@@ -3,7 +3,7 @@
 
 
 class Square:
-    '''Definition of a Square with private att size(validated) and method area()'''
+    '''Square with private att size(validated) and method area()'''
 
     def __init__(self, size=0):
         '''initializes a square by size
