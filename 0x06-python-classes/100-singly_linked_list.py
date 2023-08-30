@@ -8,7 +8,7 @@ class Node:
     def __init__(self, data, next_node=None):
         '''instantiates a node with data and next'''
         self.data = data
-        self.next_node = next_node
+        self.__next_node = next_node
 
     @property
     def data(self):
@@ -52,7 +52,7 @@ class SinglyLinkedList:
         # insert at head
         if self.__head is None:
             self.__head = new_node
-        elif self.__head.data > value:
+        elif self.__head.data > new_node.data:
             new_node.next_node = self.__head
             self.__head = new_node
         else:
@@ -84,7 +84,7 @@ sll.sorted_insert(-4)
 sll.sorted_insert(-3)
 sll.sorted_insert(4)
 sll.sorted_insert(5)
-sll.sorted_insert(12)
+sll.sorted_insert("12")
 sll.sorted_insert(3)
 print(sll)
 """
