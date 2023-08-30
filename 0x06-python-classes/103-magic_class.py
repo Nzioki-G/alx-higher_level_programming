@@ -2,14 +2,17 @@
 """disassembles a circle class"""
 
 
+import dis
+import math
+
+
 class MagicClass:
     """source code from bytecode"""
 
     def __init__(self, radius=0):
         '''inits a circle'''
         self.__radius = 0
-        if type(radius) is not int:
-            if type(radius) is not float:
+        if type(radius) != int and type(radius) != float:
                 raise TypeError("radius must be a number")
         self.__radius = radius
         return None
@@ -23,4 +26,4 @@ class MagicClass:
         return 2 * math.pi * self.__radius
 
 
-# dis.dis(MagicClass)
+dis.dis(MagicClass)
