@@ -13,7 +13,7 @@ class MagicClass:
         '''inits a circle'''
         self.__radius = 0
         if type(radius) != int and type(radius) != float:
-                raise TypeError("radius must be a number")
+            raise TypeError("radius must be a number")
         self.__radius = radius
         return None
 
