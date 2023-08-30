@@ -7,8 +7,8 @@ class Node:
 
     def __init__(self, data, next_node=None):
         '''instantiates a node with data and next'''
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
@@ -33,8 +33,6 @@ class Node:
         if not isinstance(value, self.__class__):
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
-
-
 
 
 """Defines a singly linked list"""
