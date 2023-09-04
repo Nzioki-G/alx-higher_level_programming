@@ -21,5 +21,5 @@ def non_attacking_queens():
 
 def recursive_helper(n):
     '''place queen, check for collisions, backtrack repeat'''
-    
+    pass
 
