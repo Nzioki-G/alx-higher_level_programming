@@ -1,0 +1,15 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("simple sentence")
+simple sentence
+
+>>> text_indentation("simple sentence.")
+simple sentence.
+
+
+>>> text_indentation("simple sentence. then another")
+simple sentence.
+
+then another
+
+
