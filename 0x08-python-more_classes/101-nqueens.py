@@ -27,7 +27,6 @@ def non_attacking(current_row, col_placement, board_size):
     return
 
 
-
 def is_placeable(row, col, col_placement):
     # if col_placements = [2, 0, 3] the only option left is col 1
     """
