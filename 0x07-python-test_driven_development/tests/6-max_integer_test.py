@@ -12,5 +12,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(list=[]), None)
         self.assertEqual(max_integer(list=[1,1,1]), 1)
         self.assertEqual(max_integer(list=[7]), 7)
-       #  self.assertEqual(max_integer(list=8), Exception)
-       #  self.assertRaises(max_integer(list=[7,2,'3']), ValueError)
+        self.assertRaises(max_integer(list=8), TypeError)
+        self.assertRaises(max_integer(list=[7,2,'3']), ValueError)
