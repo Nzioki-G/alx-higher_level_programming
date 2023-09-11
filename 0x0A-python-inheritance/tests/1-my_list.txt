@@ -1,0 +1,75 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList()
+
+>>> print(my_list)
+[]
+
+>>> del my_list
+
+>>> print(my_list)
+Traceback (most recent call last):
+  ...
+NameError: name 'my_list' is not defined. Did you mean: 'MyList'?
+
+>>> my_list = MyList()
+
+>>> my_list.append('c')
+
+>>> my_list.append('b')
+
+>>> my_list.append('a')
+
+>>> my_list.append('z')
+
+>>> my_list.append('s')
+
+>>> my_list.append('d')
+
+>>> my_list.print_sorted()
+['a', 'b', 'c', 'd', 's', 'z']
+
+>>> my_list.append(1)
+
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+  ...
+TypeError: '<' not supported between instances of 'int' and 'str'
+
+
+>>> print(my_list)
+['c', 'b', 'a', 'z', 's', 'd']
+
+>>> [1, 5, 2].print_sorted()
+Traceback (most recent call last):
+  ...
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+>>> another.append(1)
+
+>>> another.append(1)
+
+>>> another.append(1)
+
+>>> print(another)
+[1, 1, 1]
+
+>>> another.print_sorted()
+[1, 1, 1]
+
+>>> another.append(float('inf'))
+
+>>> another.print_sorted()
+[1, 1, 1, inf]
+
+>>> another.append(float('-inf'))
+
+>>> another.print_sorted()
+[-inf, 1, 1, 1, inf]
+
+>>> another.append([4, 1])
+
+>>> another.print_sorted()
+Traceback (most recent call last):
+  ...
+TypeError: '<' not supported between instances of 'list' and 'int'
