@@ -15,7 +15,7 @@ try:
     my_list = load_from_json_file("add_item.json")
 
 except FileNotFoundError:
-    pass    
+    pass
 
 # append the args to fetched data
 my_list += sys.argv[1:]
