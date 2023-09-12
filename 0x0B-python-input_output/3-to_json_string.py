@@ -9,7 +9,7 @@ def to_json_string(my_obj):
     return json.dumps(my_obj)
 
 
-
+"""
 my_list = [1, 2, 3]
 s_my_list = to_json_string(my_list)
 print(s_my_list)
@@ -36,3 +36,4 @@ try:
     print(type(s_my_set))
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+"""
