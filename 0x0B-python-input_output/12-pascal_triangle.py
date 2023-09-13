@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 '''Pascal's Triangle'''
 
+
 def pascal_triangle(n):
     '''returns the pascal triangle of n'''
     if n <= 0:
         return []
     return pascal_triangle_recursive(1, n, [], [])
+
 
 def pascal_triangle_recursive(n, goal, prev, pascal):
     '''returns list of ints representing the
