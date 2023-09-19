@@ -39,6 +39,7 @@ class Square(Rectangle):
                 pass
 
     def to_dictionary(self):
+        '''return the dict rep of this instance'''
         my_dict = {}
         attributes = ['id', 'size', 'x', 'y']
         for attr in attributes:
