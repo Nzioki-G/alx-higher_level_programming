@@ -88,8 +88,8 @@ class Rectangle(Base):
 
     def __str__(self):
         '''returns: [Rectangle] (<id>) <x>/<y> - <width>/<height>'''
-        return (f"[{__class__.__name__}] ({self.id}) - \
-{self.x}/{self.__y} {self.__width}/{self.__height}")
+        return (f"[{__class__.__name__}] ({self.id}) \
+{self.x}/{self.__y} - {self.__width}/{self.__height}")
 
     def update(self, *args, **kwargs):
         '''updates this instance; assigns an arg to each attribute'''
