@@ -5,3 +5,4 @@ SELECT title, name FROM tv_shows
   JOIN tv_genres
     ON tv_genres.id = genre_id
  ORDER BY title, name;
+
