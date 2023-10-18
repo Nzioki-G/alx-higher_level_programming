@@ -4,5 +4,5 @@ SELECT title, SUM(rate) AS rating
   JOIN tv_show_ratings
     ON id = show_id
  GROUP BY title
- ORDER BY rate DESC;
+ ORDER BY rating DESC;
 
